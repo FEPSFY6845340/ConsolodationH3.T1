@@ -1,0 +1,39 @@
+<!DOC TYPE html>
+<html>
+<head>
+<style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+#mainButton{
+  background-color: white;
+  font-family: monospace;
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<h1> BEHOLD The Button </h1>
+
+<p> Powered by gatorade <p>
+
+<button onclick="myFunction()">The Button</button>
+
+<script>
+function myFunction() {
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.getElementById("mainButton").style.backgroundColor = '#' + randomColor;
+}
+</script>
+
+
+</body>
